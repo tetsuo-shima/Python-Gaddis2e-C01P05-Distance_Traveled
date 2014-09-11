@@ -6,15 +6,19 @@ __author__ = 'dwight'
 #   • The distance the car will travel in 12 hours
 
 
+def main():
+    display_distance(5)
+    display_distance(8)
+    display_distance(12)
+
+
 def calc_distance_60mph(hours):
-    MILES_PER_HOUR = 60
-    return hours * MILES_PER_HOUR
+    miles_per_hour = 60
+    return hours * miles_per_hour
 
 
 def display_distance(hours):
     print(hours, 'hours =', calc_distance_60mph(hours), 'miles')
-    
-    
-display_distance(5)
-display_distance(8)
-display_distance(12)
+
+
+main()
